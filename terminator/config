@@ -1,4 +1,6 @@
 [global_config]
+  window_state = maximise
+  extra_styling = False
   title_hide_sizetext = True
   title_transmit_fg_color = "#282a36"
   title_transmit_bg_color = "#50fa7b"
@@ -8,6 +10,8 @@
   title_inactive_bg_color = "#44475a"
   inactive_color_offset = 0.61
   suppress_multiple_term_dialog = True
+  title_use_system_font = False
+  title_font = Noto Sans Mono CJK HK Italic 9
 [keybindings]
 [profiles]
   [[default]]
@@ -20,23 +24,34 @@
     background_image = None
 [layouts]
   [[default]]
-    [[[child1]]]
-      parent = window0
-      type = Terminal
-    [[[window0]]]
-      parent = ""
+    [[[child0]]]
       type = Window
+      parent = ""
+      order = 0
+      position = 0:25
+      maximised = True
+      fullscreen = False
+      size = 1920, 1025
+      title = fish /home/jason/Development/
+      last_active_term = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      last_active_window = True
+    [[[terminal1]]]
+      type = Terminal
+      parent = child0
+      order = 0
+      profile = default
+      uuid = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
   [[api.clever]]
     [[[child0]]]
       type = Window
       parent = ""
       order = 0
-      position = 0:32
+      position = 0:25
       maximised = True
       fullscreen = False
-      size = 1920, 1011
-      title = fish /home/jason
-      last_active_term = c9ad58ee-40d7-47d4-814c-5cb2fce56105
+      size = 1920, 1025
+      title = fish /home/jason/Development/
+      last_active_term = 3aa81990-54b4-45d9-8b17-bb561ab39119
       last_active_window = True
     [[[child1]]]
       type = HPaned
@@ -49,42 +64,42 @@
       parent = child1
       order = 0
       profile = default
-      uuid = c9ad58ee-40d7-47d4-814c-5cb2fce56105
-      directory = /home/jason/Development/apiclever/html
-      command = git status; fish
+      uuid = b7bb7958-01ca-4cdd-8604-aec0708e2554
+      directory = /home/jason/Development/apiclever/html/
+      command = php -S 0.0.0.0:9090
     [[[child3]]]
       type = VPaned
       parent = child1
       order = 1
-      position = 503
+      position = 510
       ratio = 0.5
     [[[terminal4]]]
       type = Terminal
       parent = child3
       order = 0
       profile = default
-      uuid = ba13efe0-4559-4b4c-a2b6-dcef41964a2b
-      directory = /home/jason/Development/apiclever/html
-      command = php -S localhost:9090
+      uuid = 3aa81990-54b4-45d9-8b17-bb561ab39119
+      directory = /home/jason/Development/apiclever/
+      command = ""
     [[[terminal5]]]
       type = Terminal
       parent = child3
       order = 1
       profile = default
-      uuid = 9a41fc22-0285-4fc6-b9d1-f246f47af01a
+      uuid = f631e933-97d2-411e-bbd7-c4818a0017a6
+      directory = /home/jason/Development/apiclever/
       command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/apiclever/api.cleverinvestor.com/; fish'"
-      directory = ~/Development/apiclever/html
-  [[olclogin]]
+  [[mentoringapplication]]
     [[[child0]]]
       type = Window
       parent = ""
       order = 0
-      position = 0:32
+      position = 0:0
       maximised = True
-      fullscreen = False
-      size = 1920, 1011
-      title = fish /home/jason
-      last_active_term = 09590e8b-1d38-48c6-a189-ec428686f209
+      fullscreen = True
+      size = 1920, 1080
+      title = fish /home/jason/Development/
+      last_active_term = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
       last_active_window = True
     [[[child1]]]
       type = HPaned
@@ -97,21 +112,486 @@
       parent = child1
       order = 0
       profile = default
-      uuid = d820c928-d9d0-40ac-af77-75094fe08592
-      command = php -S jason.localhost:9090
-      directory = /home/jason/Development/olclogin/html
+      uuid = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      directory = /home/jason/Development/mentoringapplication/html
+      command = php -S localhost:9090
     [[[child3]]]
       type = VPaned
       parent = child1
       order = 1
-      position = 503
+      position = 538
+      ratio = 0.5004651162790698
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = 4d0696ee-c0cb-4659-80b4-f723a817a914
+      command = ""
+      directory = /home/jason/Development/mentoringapplication
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      profile = default
+      uuid = e263932a-64cc-4b88-a21a-d66291f97795
+      directory = /home/jason/Development/mentoringapplication
+      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/mentoringapp/mentoringapplication.com; fish'"
+  [[ai-real-estate-system]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:25
+      maximised = True
+      fullscreen = False
+      size = 1920, 1025
+      title = fish /home/jason/Development/
+      last_active_term = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 958
+      ratio = 0.5002610966057441
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      directory = /home/jason/Development/ai-real-estate-system-checkout/html
+      command = php -S localhost:9090
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 510
       ratio = 0.5
     [[[terminal4]]]
       type = Terminal
       parent = child3
       order = 0
       profile = default
-      uuid = 09590e8b-1d38-48c6-a189-ec428686f209
+      uuid = 6ea3b131-b10b-44cc-b66f-53f98ac531e8
+      command = ""
+      directory = /home/jason/Development/ai-real-estate-system-checkout
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      profile = default
+      uuid = 009edf7d-89a6-4fbd-80c0-4367c3de72a1
+      directory = /home/jason/Development/ai-real-estate-system-checkout
+      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/checkout/checkout.airealestatesystem.com/; fish'"
+  [[dealautomator]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:25
+      maximised = True
+      fullscreen = False
+      size = 1920, 1025
+      title = fish /home/jason/Development/
+      last_active_term = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 958
+      ratio = 0.5002610966057441
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      directory = /home/jason/Development/dealautomator/html
+      command = php -S jason.localhost:9090
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 510
+      ratio = 0.5
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = 6c1c5c3c-bc21-4133-bbb3-ad3639b5b273
+      directory = /home/jason/Development/dealautomator
+      command = ""
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      profile = default
+      uuid = 03da4baa-df1b-4b21-9b44-e2274c026a45
+      directory = /home/jason/Development/dealautomator
+      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/dealautomator/dealautomator.com/; fish'"
+  [[doingdealsevent]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:25
+      maximised = True
+      fullscreen = False
+      size = 1920, 1025
+      title = fish /home/jason/Development/
+      last_active_term = e05cd2ad-de93-4d7b-a2c6-386188ada9bc
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 958
+      ratio = 0.5002610966057441
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      directory = /home/jason/Development/doingdealsevent/html
+      command = php -S localhost:9090
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 510
+      ratio = 0.5
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = e05cd2ad-de93-4d7b-a2c6-386188ada9bc
+      command = ""
+      directory = /home/jason/Development/doingdealsevent
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      profile = default
+      uuid = 6184bc0d-66fe-4c51-8b82-5676c75d3e85
+      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/doingdealsevent/doingdealsevent.com; fish'"
+      directory = /home/jason/Development/doingdealsevent
+  [[breakthroughinrealestate]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:25
+      maximised = True
+      fullscreen = False
+      size = 1920, 1025
+      title = fish /home/jason/Development/
+      last_active_term = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 958
+      ratio = 0.5002610966057441
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      directory = /home/jason/Development/breakthroughinrealestate/html
+      command = php -S localhost:9090
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 510
+      ratio = 0.5
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = a671e11d-5a76-4215-8e58-1830a4f26f88
+      directory = /home/jason/Development/breakthroughinrealestate
+      command = ""
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      profile = default
+      uuid = 99b7e24c-f1d9-4d3e-9563-271420dc20d1
+      directory = /home/jason/Development/breakthroughinrealestate
+      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/breakthroughinre/breakthroughinrealestate.com/; fish'"
+  [[jason.handles.tech]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:25
+      maximised = True
+      fullscreen = False
+      size = 1920, 1025
+      title = fish /home/jason/Development/
+      last_active_term = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 958
+      ratio = 0.5002610966057441
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      directory = /home/jason/Development/jason.handles.tech/public_html
+      command = php -S localhost:9090
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 510
+      ratio = 0.5
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = 058b7f37-1fce-4281-aa9f-113be1bcf6ee
+      directory = /home/jason/Development/jason.handles.tech
+      command = ""
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      profile = default
+      uuid = b99326ab-e344-4252-862f-f8ece06c1898
+      directory = /home/jason/Development/jason.handles.tech
+      command = 'ssh -t -p 2257 jason.handles.tech@192.168.0.102 "cd /home/jason.handles.tech; fish;"'
+  [[Nexus.Clever]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:25
+      maximised = True
+      fullscreen = False
+      size = 1920, 1025
+      title = fish /home/jason/Development/
+      last_active_term = 804de1d0-0c1a-4345-b0f2-ae993347ae81
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 958
+      ratio = 0.5002610966057441
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      command = php -S 0.0.0.0:9090
+      directory = /home/jason/Development/nexus.cleverinvestor.com/html
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 510
+      ratio = 0.5
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = 22fef8dd-3b84-4dc6-81df-d5b7a5cbda15
+      command = ""
+      directory = /home/jason/Development/nexus.cleverinvestor.com
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      profile = default
+      uuid = 804de1d0-0c1a-4345-b0f2-ae993347ae81
+      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/nexus/nexus.cleverinvestor.com; fish'"
+      directory = /home/jason/Development/
+  [[dodealswithme]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:25
+      maximised = True
+      fullscreen = False
+      size = 1920, 1025
+      title = fish /home/jason/Development/
+      last_active_term = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 958
+      ratio = 0.5002610966057441
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      directory = /home/jason/Development/dodealswithme/html
+      command = php -S jason.localhost:9090
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 510
+      ratio = 0.5
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = b27ab6bd-11e4-4f7d-af8b-f1f6a2a1e2d8
+      command = ""
+      directory = /home/jason/Development/dodealswithme
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      profile = default
+      uuid = 354bc564-ae42-4e13-a6ea-3951ba725ecb
+      directory = /home/jason/Development/dodealswithme
+      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/dodealsw/dodealswithme.com/; fish'"
+  [[bash-scripts]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:25
+      maximised = True
+      fullscreen = False
+      size = 1920, 1025
+      title = fish /home/jason/Development/
+      last_active_term = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      last_active_window = True
+    [[[child1]]]
+      type = VPaned
+      parent = child0
+      order = 0
+      position = 510
+      ratio = 0.5
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      directory = /home/jason/Development/BashScripts
+      command = ""
+    [[[terminal3]]]
+      type = Terminal
+      parent = child1
+      order = 1
+      profile = default
+      uuid = 8a13ee5d-0c82-4429-a085-8e6b399761a1
+      directory = /home/jason/Development/Code Workspaces
+  [[uplife.cleverinvestor.dev]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:25
+      maximised = True
+      fullscreen = False
+      size = 1920, 1025
+      title = fish /home/jason/Development/
+      last_active_term = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 958
+      ratio = 0.5002610966057441
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      directory = /home/jason/Development/uplife.cleverinvestor.dev/html
+      command = php -S jason.localhost:9090
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 510
+      ratio = 0.5
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = b7104dde-e7ae-4989-aa42-84e79c6b994a
+      command = ""
+      directory = /home/jason/Development/uplife.cleverinvestor.dev/
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      profile = default
+      uuid = 5f146952-e980-4460-a29e-347b0d1443f2
+      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/uplife/uplife.cleverinvestor.dev; fish'"
+      directory = /home/jason/Development/uplife.cleverinvestor.dev/
+  [[olclogin]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:25
+      maximised = True
+      fullscreen = False
+      size = 1920, 1025
+      title = fish /home/jason/Development/
+      last_active_term = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 958
+      ratio = 0.5002610966057441
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      directory = /home/jason/Development/olclogin/html
+      command = php -S jason.localhost:9090
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 510
+      ratio = 0.5
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = 9e4a4c18-0eb9-4f6b-b73d-5080d5505647
       command = ""
       directory = /home/jason/Development/olclogin/
     [[[terminal5]]]
@@ -119,20 +599,20 @@
       parent = child3
       order = 1
       profile = default
-      uuid = d59944c8-095f-4090-b4d1-597adb1388e1
-      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/olclogin/olclog.in/; fish'"
+      uuid = b1e2583e-4c8d-4843-a9f5-7f7d62dd28fd
       directory = /home/jason/Development/olclogin/
+      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/olclogin/olclog.in; fish'"
   [[reg.cleverinvestor.dev]]
     [[[child0]]]
       type = Window
       parent = ""
       order = 0
-      position = 1080:1080
+      position = 0:25
       maximised = True
       fullscreen = False
-      size = 1920, 1043
-      title = fish /home/jason/Development/reg.cleverinvestor.dev
-      last_active_term = 400283e7-e778-40b3-944c-c17c6ee11583
+      size = 1920, 1025
+      title = fish /home/jason/Development/
+      last_active_term = dbb443ee-cbe0-4ba2-9bd5-f545d020201f
       last_active_window = True
     [[[child1]]]
       type = HPaned
@@ -145,21 +625,21 @@
       parent = child1
       order = 0
       profile = default
-      uuid = 179d417d-607e-48b8-9790-cbabaefae3d7
+      uuid = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
       directory = /home/jason/Development/reg.cleverinvestor.dev/html
       command = php -S 0.0.0.0:9090
     [[[child3]]]
       type = VPaned
       parent = child1
       order = 1
-      position = 519
+      position = 510
       ratio = 0.5
     [[[terminal4]]]
       type = Terminal
       parent = child3
       order = 0
       profile = default
-      uuid = 400283e7-e778-40b3-944c-c17c6ee11583
+      uuid = dbb443ee-cbe0-4ba2-9bd5-f545d020201f
       command = ""
       directory = /home/jason/Development/reg.cleverinvestor.dev
     [[[terminal5]]]
@@ -167,55 +647,55 @@
       parent = child3
       order = 1
       profile = default
-      uuid = 62361945-5dfa-4a92-9a76-eb212cf933ae
+      uuid = 207ebec6-9642-44d9-aaf9-2719f57439c9
       directory = /home/jason/Development/reg.cleverinvestor.dev
-      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/regclever/reg.cleverinvestor.dev/; fish'"
-  [[Nexus.Clever]]
+      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/regclever/reg.cleverinvestor.dev; fish'"
+  [[checkout.cleversummit.com]]
     [[[child0]]]
       type = Window
       parent = ""
       order = 0
-      position = 0:32
+      position = 0:25
       maximised = True
       fullscreen = False
-      size = 1920, 1011
-      title = fish /home/jason/Development/nexus.cleverinvestor.com/html
-      last_active_term = 3cd2c318-8f72-463f-966e-9c7d5a0b6f77
+      size = 1920, 1025
+      title = fish /home/jason/Development/
+      last_active_term = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
       last_active_window = True
     [[[child1]]]
       type = HPaned
       parent = child0
       order = 0
-      position = 959
-      ratio = 0.5007832898172324
+      position = 958
+      ratio = 0.5002610966057441
     [[[terminal2]]]
       type = Terminal
       parent = child1
       order = 0
       profile = default
-      uuid = 3cd2c318-8f72-463f-966e-9c7d5a0b6f77
-      command = php -S localhost:9090
-      directory = /home/jason/Development/nexus.cleverinvestor.com/html
+      uuid = 6f805d35-dcb3-433e-a859-1ec9cb1d8ae8
+      directory = /home/jason/Development/checkout-cleversummit-24/html
+      command = php -S 0.0.0.0:9090
     [[[child3]]]
       type = VPaned
       parent = child1
       order = 1
-      position = 503
+      position = 510
       ratio = 0.5
     [[[terminal4]]]
       type = Terminal
       parent = child3
       order = 0
       profile = default
-      uuid = 1e3bf211-d0db-4a97-a2bc-993b90178d7d
-      directory = /home/jason/Development/nexus.cleverinvestor.com/
+      uuid = c7547a02-53b8-40f1-937f-fac96618a190
       command = ""
+      directory = /home/jason/Development/checkout-cleversummit-24
     [[[terminal5]]]
       type = Terminal
       parent = child3
       order = 1
       profile = default
-      uuid = 9f7d43cf-5a04-4962-b700-7d8f1df8267c
-      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/nexus/nexus.cleverinvestor.com/; fish'"
-      directory = /home/jason/Development/nexus.cleverinvestor.com/
+      uuid = 9656a0a2-3c6f-4005-9bbe-05808cb53883
+      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/checkoutcleversu/checkout.cleversummit.com; fish'"
+      directory = /home/jason/Development/checkout-cleversummit-24
 [plugins]
