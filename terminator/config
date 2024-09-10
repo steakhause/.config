@@ -1,0 +1,221 @@
+[global_config]
+  title_hide_sizetext = True
+  title_transmit_fg_color = "#282a36"
+  title_transmit_bg_color = "#50fa7b"
+  title_receive_fg_color = "#282a36"
+  title_receive_bg_color = "#ff79c6"
+  title_inactive_fg_color = "#f8f8f2"
+  title_inactive_bg_color = "#44475a"
+  inactive_color_offset = 0.61
+  suppress_multiple_term_dialog = True
+[keybindings]
+[profiles]
+  [[default]]
+    background_color = "#282a36"
+    cursor_color = "#f8f8f2"
+    font = Anonymous Pro 12
+    foreground_color = "#f8f8f2"
+    palette = "#262626:#e356a7:#42e66c:#e4f34a:#9b6bdf:#e64747:#75d7ec:#efa554:#7a7a7a:#ff79c6:#50fa7b:#f1fa8c:#bd93f9:#ff5555:#8be9fd:#ffb86c"
+    use_system_font = False
+    background_image = None
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+  [[api.clever]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:32
+      maximised = True
+      fullscreen = False
+      size = 1920, 1011
+      title = fish /home/jason
+      last_active_term = c9ad58ee-40d7-47d4-814c-5cb2fce56105
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 958
+      ratio = 0.5002610966057441
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = c9ad58ee-40d7-47d4-814c-5cb2fce56105
+      directory = /home/jason/Development/apiclever/html
+      command = git status; fish
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 503
+      ratio = 0.5
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = ba13efe0-4559-4b4c-a2b6-dcef41964a2b
+      directory = /home/jason/Development/apiclever/html
+      command = php -S localhost:9090
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      profile = default
+      uuid = 9a41fc22-0285-4fc6-b9d1-f246f47af01a
+      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/apiclever/api.cleverinvestor.com/; fish'"
+      directory = ~/Development/apiclever/html
+  [[olclogin]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:32
+      maximised = True
+      fullscreen = False
+      size = 1920, 1011
+      title = fish /home/jason
+      last_active_term = 09590e8b-1d38-48c6-a189-ec428686f209
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 958
+      ratio = 0.5002610966057441
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = d820c928-d9d0-40ac-af77-75094fe08592
+      command = php -S jason.localhost:9090
+      directory = /home/jason/Development/olclogin/html
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 503
+      ratio = 0.5
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = 09590e8b-1d38-48c6-a189-ec428686f209
+      command = ""
+      directory = /home/jason/Development/olclogin/
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      profile = default
+      uuid = d59944c8-095f-4090-b4d1-597adb1388e1
+      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/olclogin/olclog.in/; fish'"
+      directory = /home/jason/Development/olclogin/
+  [[reg.cleverinvestor.dev]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 1080:1080
+      maximised = True
+      fullscreen = False
+      size = 1920, 1043
+      title = fish /home/jason/Development/reg.cleverinvestor.dev
+      last_active_term = 400283e7-e778-40b3-944c-c17c6ee11583
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 958
+      ratio = 0.5002610966057441
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 179d417d-607e-48b8-9790-cbabaefae3d7
+      directory = /home/jason/Development/reg.cleverinvestor.dev/html
+      command = php -S 0.0.0.0:9090
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 519
+      ratio = 0.5
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = 400283e7-e778-40b3-944c-c17c6ee11583
+      command = ""
+      directory = /home/jason/Development/reg.cleverinvestor.dev
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      profile = default
+      uuid = 62361945-5dfa-4a92-9a76-eb212cf933ae
+      directory = /home/jason/Development/reg.cleverinvestor.dev
+      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/regclever/reg.cleverinvestor.dev/; fish'"
+  [[Nexus.Clever]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:32
+      maximised = True
+      fullscreen = False
+      size = 1920, 1011
+      title = fish /home/jason/Development/nexus.cleverinvestor.com/html
+      last_active_term = 3cd2c318-8f72-463f-966e-9c7d5a0b6f77
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 959
+      ratio = 0.5007832898172324
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 3cd2c318-8f72-463f-966e-9c7d5a0b6f77
+      command = php -S localhost:9090
+      directory = /home/jason/Development/nexus.cleverinvestor.com/html
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 503
+      ratio = 0.5
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = 1e3bf211-d0db-4a97-a2bc-993b90178d7d
+      directory = /home/jason/Development/nexus.cleverinvestor.com/
+      command = ""
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      profile = default
+      uuid = 9f7d43cf-5a04-4962-b700-7d8f1df8267c
+      command = "ssh -p 2256 -t root@69.167.176.95 'cd /home/nexus/nexus.cleverinvestor.com/; fish'"
+      directory = /home/jason/Development/nexus.cleverinvestor.com/
+[plugins]
